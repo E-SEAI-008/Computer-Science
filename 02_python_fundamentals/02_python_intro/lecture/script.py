@@ -1,4 +1,4 @@
-print("--- Python Syntax ---")
+print("--- Python Syntax ---\n")
 
 # This is a single-line comment
 
@@ -14,7 +14,7 @@ name = "John"
 # The print() function displays output
 print("Hello, ", name)
 
-print("--- Variables and Type Checking ---")
+print("\n--- Variables and Type Checking ---\n")
 
 # Creating variables of different types
 student_name = "Bob"
@@ -31,8 +31,8 @@ print("my_variable before reassignment: ", type(my_variable))
 my_variable = "Now I'm a string"
 print("my_variable after reassignment: ", type(my_variable))
 
-print("--- Type Casting ---")
-
+print("\n--- Type Casting ---\n")
+name = "Elizabeth"
 # Converting between types
 age = 25
 age_str = str(age)  # Convert int to string
@@ -48,7 +48,7 @@ print("bool(1): ", bool_example)
 # Be careful with invalid casting
 # invalid = int("Hello")
 
-print("--- Working with Numbers ---")
+print("\n--- Working with Numbers ---\n")
 
 # Arithmetic operations
 a = 10
@@ -91,7 +91,7 @@ x = 2
 x **= 3  # x = x ** 3 → 8
 print("after **=3:", x)
 
-print("--- String Basics ---")
+print("\n--- String Basics ---\n")
 
 # Creating strings
 # single_quotes = 'Hello'
@@ -108,7 +108,7 @@ print("greeting:", greeting)  # Hello Python
 laugh = "ha" * 3
 print("laugh:", laugh)  # hahaha
 
-print("--- String Methods ---")
+print("\n--- String Methods ---\n")
 
 text = "  Hello Python World  "
 
@@ -132,7 +132,7 @@ print("strip + upper:", words)
 print("'Python' in text:", "Python" in text)  # True
 print("'Java' not in text:", "Java" not in text)  # True
 
-print("--- String Formatting ---")
+print("\n--- String Formatting ---\n")
 
 name = "Alice"
 age = 25
@@ -142,7 +142,7 @@ gpa = 3.85
 message1 = f"My name is {name} and I am {age} years old."
 print("f-string:", message1)
 
-print("--- Booleans and Truthy/Falsy Values ---")
+print("\n--- Booleans and Truthy/Falsy Values ---\n")
 
 # Boolean values
 is_sunny = True
@@ -165,7 +165,7 @@ temperature = 25
 is_warm = temperature > 20
 print("is warm:", is_warm)  # True
 
-print("--- Comparison Operators ---")
+print("\n--- Comparison Operators ---\n")
 
 x = 10
 y = 5
@@ -181,7 +181,7 @@ print("y <= 5:", y <= 5)  # True
 print("'apple' < 'banana':", "apple" < "banana")  # True
 print("'Python' == 'python':", "Python" == "python")  # False
 
-print("--- Logical Operators ---")
+print("\n--- Logical Operators ---\n")
 
 # Logical AND - both must be True
 age = 25
