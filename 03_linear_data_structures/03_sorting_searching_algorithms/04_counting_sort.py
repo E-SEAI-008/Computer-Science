@@ -61,47 +61,50 @@ for i in range(1, len(count)):
 
 print("cumulative:", count)  # [0, 1, 3, 5, 6, 6, 6, 6, 7]
 
-# Step 5: Place elements into output, iterate backwards for stability
-output = [0] * len(arr)
+# Step 5: Place elements into result, iterate backwards for stability
+result = [0] * len(arr)
 
 for num in reversed(arr):  # go backwards through input
     count[num] -= 1  # decrement first to get 0-based index
-    output[count[num]] = num  # place at the correct position
+    result[count[num]] = num  # place at the correct position
 
-print("sorted:", output)  # [1, 2, 2, 3, 3, 4, 8]
+print("sorted:", result)  # [1, 2, 2, 3, 3, 4, 8]
 
 # Step 5 in default version (with stability)
+
+# arr = [4, 2, 2, 8, 3, 3, 1]
+
 # Step 1: current = 1 (last element)
 #   cumulative[1] = 1 → place at index 1-1 = 0
-#   output: [1, _, _, _, _, _, _]
+#   result: [1, _, _, _, _, _, _]
 #   cumulative[1] becomes 0
 
 # Step 2: current = 3
 #   cumulative[3] = 5 → place at index 5-1 = 4
-#   output: [1, _, _, _, 3, _, _]
+#   result: [1, _, _, _, 3, _, _]
 #   cumulative[3] becomes 4
 
 # Step 3: current = 3
 #   cumulative[3] = 4 → place at index 4-1 = 3
-#   output: [1, _, _, 3, 3, _, _]
+#   result: [1, _, _, 3, 3, _, _]
 #   cumulative[3] becomes 3
 
 # Step 4: current = 8
 #   cumulative[8] = 7 → place at index 7-1 = 6
-#   output: [1, _, _, 3, 3, _, 8]
+#   result: [1, _, _, 3, 3, _, 8]
 #   cumulative[8] becomes 6
 
 # Step 5: current = 2
 #   cumulative[2] = 3 → place at index 3-1 = 2
-#   output: [1, _, 2, 3, 3, _, 8]
+#   result: [1, _, 2, 3, 3, _, 8]
 #   cumulative[2] becomes 2
 
 # Step 6: current = 2
 #   cumulative[2] = 2 → place at index 2-1 = 1
-#   output: [1, 2, 2, 3, 3, _, 8]
+#   result: [1, 2, 2, 3, 3, _, 8]
 #   cumulative[2] becomes 1
 
 # Step 7: current = 4
 #   cumulative[4] = 6 → place at index 6-1 = 5
-#   output: [1, 2, 2, 3, 3, 4, 8]
+#   result: [1, 2, 2, 3, 3, 4, 8]
 #   cumulative[4] becomes 5
