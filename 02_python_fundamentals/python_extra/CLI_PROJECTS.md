@@ -95,8 +95,8 @@ Create a program that translates an English phrase into Pig Latin.
 | Rule | Condition | Example |
 |------|-----------|---------|
 | Starts with a vowel | Add `way` to the end | `Awesome` → `Awesomeway` |
-| Starts with one consonant | Move consonant to end, add `ay` | `Happy` → `appyHay` |
-| Starts with two consonants | Move both to end, add `ay` | `Child` → `ildChay` |
+| Starts with one consonant | Move consonant to end, add `ay` | `Happy` → `Appyhay` |
+| Starts with two consonants | Move both to end, add `ay` | `Child` → `Ildchay` |
 
 ### How to run
 ```bash
