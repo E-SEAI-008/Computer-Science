@@ -1,4 +1,8 @@
 # Approach 1
+# Time Complexity: O(2^n)
+# Every call branches into two more calls, leading to an exponential number of operations.
+# Space Complexity: O(n)
+# The maximum depth of the recursion tree (the call stack) goes up to n.
 def fib_naive(n):
     if n <= 1:
         return n
@@ -23,6 +27,10 @@ def fib_naive(n):
 
 
 # Approach 2
+# Time Complexity: O(n)
+# Each Fibonacci number from 0 to n is computed exactly once and then cached.
+# Space Complexity: O(n)
+# We use O(n) space for the memoization dictionary and O(n) space for the recursive call stack.
 def fib_memo(n, memo=None):
     if memo is None:
         memo = {}
@@ -43,6 +51,10 @@ def fib_memo(n, memo=None):
 
 
 # Approach 3
+# Time Complexity: O(n)
+# We iterate through a loop n-1 times, performing constant time operations each step.
+# Space Complexity: O(1)
+# We only store two variables (prev and curr) regardless of the size of n.
 def fib_iterative(n):
     if n <= 1:
         return n
